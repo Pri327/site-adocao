@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Contato</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="caixa">
+        <h1>
+          <img
+            src="imagens/logo.adocao.png"
+            alt="logo da ong adocao"
+            class="logo"
+          />
+        </h1>
+
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="nossa-historia.html">Nossa História</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="informacoes-contato">
+          <h1>Entre em contato conosco</h1>
+          <p>
+            Estamos localizados na rua Cantareira, 306 - Centro Histórico de São
+            Paulo, São Paulo - SP, 01024-900
+          </p>
+          <p>Telefone para contato (11)0000-0000</p>
+        </div>
+
+        <div class="mapa-conteudo">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43124.60883708968!2d-46.654474285907504!3d-23.57338906235049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f8c61020205%3A0x9ae474c606fef4!2sMercado%20Municipal%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1645985663970!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+      <section>
+        <div class="informacoes-contato2">
+          <h2>
+            Se preferir nos envie uma menssagem que entraremos em contato.
+          </h2>
+        </div>
+
+        <form>
+          <label for="nomesobrenome">Nome e Sobrenome</label>
+          <input type="text" id="nomesobrenome" class="input-padrao" required />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            class="input-padrao"
+            required
+            placeholder="seuemail@dominio.com"
+          />
+
+          <label for="telefone">Telefome</label>
+          <input
+            type="text"
+            id="telefone"
+            class="input-padrao"
+            required
+            placeholder="(xx)xxx-xxx"
+          />
+
+          <label for="menssagem">Menssagem</label>
+          <textarea
+            cols="70"
+            rows="10"
+            id="menssagem"
+            class="input-padrao"
+          ></textarea>
+
+          <fieldset>
+            <legend>Como prefere o nosso contato?</legend>
+            <label
+              ><input
+                type="radio"
+                name="contato"
+                value="email"
+                id="radio-email"
+              />Email</label
+            >
+
+            <label
+              ><input
+                type="radio"
+                name="contato"
+                value="telefone"
+                id="radio-telefone"
+              />Telefone</label
+            >
+
+            <label
+              ><input
+                type="radio"
+                name="contato"
+                value="whatsapp"
+                id="radio-whatsapp"
+                checked
+              />Whatsapp</label
+            >
+          </fieldset>
+
+          <input type="submit" value="Enviar Formulário" class="enviar" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>✶ Desenvolvido por Priscila Barbosa - 2022</p>
+    </footer>
+  </body>
+</html>
